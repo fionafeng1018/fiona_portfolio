@@ -1,0 +1,129 @@
+
+//colors
+$gray-light: #cccccc;
+$gray-dark:#5c5c5c;
+$primary-background-color: #ffffff;
+
+
+//font
+$card_title_size: 1rem;
+$card_text_size: 0.8rem;
+
+$card_text_margin: 1rem 1rem 1rem 1rem;
+$card_title_margin:0rem 1rem 0rem 1rem;
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+    width: 33.3333%;
+
+    @media(max-width: 768px) {
+        width: 50%;
+    }
+
+    @media(max-width: 414px) {
+        width: 100%;
+    }
+}
+
+.my_card {
+    background-color: $primary-background-color;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &:hover {
+        .card__image {
+            filter: contrast(100%);
+        }
+    }
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem 0rem 0rem 0rem;
+
+    .card__title {
+        color: $gray-dark;
+        font-size: $card_title_size;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin:$card_title_margin;
+    }
+
+    .card__text {
+        flex: 1 1 auto;
+        font-size: $card_text_size;
+        line-height: 1.5;
+        margin: $card_text_margin;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0 0 1rem;
+        margin: 0 1rem;
+        display: grid;
+        grid-auto-columns: minmax(auto,max-content);
+        grid-gap: .5rem;
+        grid-auto-flow: column;
+    }
+
+    li{
+        display: list-item;
+        border: 1px solid #dddce0;
+        color: #4b4b4d;
+        padding: .1rem .4rem;
+        font-size: .88rem;
+        border-radius: 3px;
+        white-space: nowrap;
+    }
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-top-left-radius: 0.25rem;
+    // border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
+    ;
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%; // 16:9 aspect ratio
+    }
+
+    @media(min-width: 40rem) {
+        &::before {
+            padding-top: 66.6%; // 3:2 aspect ratio
+        }
+    }
+}
+
+.card__image--fence {
+    background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+

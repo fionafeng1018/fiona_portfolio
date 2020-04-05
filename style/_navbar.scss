@@ -1,0 +1,32 @@
+$nav_font_color:#f5887f;
+
+@mixin change_nav_link_color {
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: $nav_font_color;
+
+        &:hover {
+            background-color: #f5887f;
+            color: #ffffff;
+        }
+
+    }
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.nav {
+    .navbar-nav {
+        flex-direction: row;
+        text-transform: uppercase;
+
+    }
+
+}
+
+@include change_nav_link_color();

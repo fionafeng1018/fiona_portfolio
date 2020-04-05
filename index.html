@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap 3-->
+  <title>Fiona's Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="site.css"> -->
+  <link rel='stylesheet' href="style/site.css">
+  <!--Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <main>
+    <section id="sec_01">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 left_col">
+            <img src="/images/profile.JPG" alt="my profile picture" class="profile_img">
+          </div>
+          <div class="col-lg-6 right_col">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!-- <a class="navbar-brand" href="#">Fi</a> -->
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#sec_01">About me <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sec_02">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sec_03">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="about_me_content">
+              <h1>Fiona Feng</h1>
+              <p>Email: fionafeng1018@gmail.com</p>
+              <p>Phone: 647-217-1018</p>
+              <p>Some introduction goes here, Some introduction goes here,
+                Some introduction goes here,Some introduction goes here,Some introduction goes here,
+                Some introduction goes here,Some introduction goes here, Some introduction goes here,
+                Some introduction goes here</p>
+              <div class="intro-social-icons">
+                <ul class="social-icons">
+                  <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                  <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                  <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec_02">
+      <div class="container-fluid">
+        <div class="row">
+          <h1>Project</h1>
+        </div>
+        <div class="row">
+          <div id="card">
+            <ul class="cards">              
+              <li class="cards__item">
+                <div class="my_card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">JAB Website</div>
+                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The
+                      second
+                      and
+                      third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                      <ul>
+                        <li>React</li>
+                        <li>RestAPI</li>
+                        <li>JaveScript</li>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="my_card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">JAB Website</div>
+                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The
+                      second
+                      and
+                      third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="my_card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">JAB Website</div>
+                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The
+                      second
+                      and
+                      third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec_03">
+      <footer>
+        <div class="container footer_con">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Fiona Feng</h2>
+              <p id="footer_text_1">Contact Me:</p>
+
+              <p>EMAIL: fionafeng1018@gmail.com</p>
+              <p>TEL: 647-217-1018</p>
+            </div>
+            <div class="col-lg-6">
+              <h2>CONTACT US</h2>
+              <form action="mailto:fionafeng1018@gmail.com" method="post" enctype="text/plain">
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+                <input id="email" name="email" type="text" class="feedback-input" placeholder="Email" required />
+                <div id="emailErr"></div>
+                <textarea name="text" class="feedback-input" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-danger">SEND</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <p class="copyright">&copy;Copyright</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <!-- Load our React component. -->
+  <script src="./js/card.js"></script>
+
+</body>
+
+</html>
