@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Bootstrap 3-->
   <title>Fiona's Portfolio</title>
+  <!--Bootstrap 4 css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="site.css"> -->
+  <!--local css-->
   <link rel='stylesheet' href="style/site.css">
   <!--Google font-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-
+  <!--Bootstrap 4-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+  <!--Vue js-->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <main>
-    <section id="sec_01">
+    <section id="aboutme">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 left_col">
@@ -36,13 +36,13 @@
                 <!-- <a class="navbar-brand" href="#">Fi</a> -->
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#sec_01">About me <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#aboutme">About me <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sec_02">Project</a>
+                    <a class="nav-link" href="#project">Project</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Resume</a>
+                    <a class="nav-link" href="./files/FionaFeng_Resume.pdf" target="_black">Resume</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#sec_03">Contact</a>
@@ -60,10 +60,10 @@
                 Some introduction goes here</p>
               <div class="intro-social-icons">
                 <ul class="social-icons">
-                  <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100009403336579" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/FionaFeng1018" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/fiona-feng-a14b56128/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/fionafeng1018" class="social-icon"> <i class="fa fa-github"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -72,28 +72,30 @@
         </div>
       </div>
     </section>
-    <section id="sec_02">
+    <section id="project">
       <div class="container-fluid">
         <div class="row">
           <h1>Project</h1>
         </div>
         <div class="row">
           <div id="card">
-            <ul class="cards">              
+            <ul class="cards">
               <li class="cards__item">
                 <div class="my_card">
                   <div class="card__image card__image--headphone"></div>
                   <div class="card__content">
                     <div class="card__title">Jammming</div>
-                    <p class="card__text">Jammming is an website application which is built with React.js and Spotify API that allows the users to search the Spotify library, create a custom playlist, then save it to their Spotify account.
+                    <p class="card__text">Jammming is an website application which is built with React.js and Spotify
+                      API that allows the users to search the Spotify library, create a custom playlist, then save it to
+                      their Spotify account.
                     </p>
-                      <ul>
-                        <li>HTML/CSS</li>
-                        <li>React.js</li>
-                        <li>RESTFUL API</li>
-                        <li>JaveScript</li>
-                        <li>Web Development</li>
-                      </ul>
+                    <ul>
+                      <li>HTML/CSS</li>
+                      <li>React.js</li>
+                      <li>RESTFUL API</li>
+                      <li>JaveScript</li>
+                      <li>Web Development</li>
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -102,15 +104,15 @@
                   <div class="card__image card__image--ravenous"></div>
                   <div class="card__content">
                     <div class="card__title">Ravenous</div>
-                    <p class="card__text">Ravenous is a React app to search for restaurants using the Yelp API. 
+                    <p class="card__text">Ravenous is a React app to search for restaurants using the Yelp API.
                       This applicaion allows users to search and sort the results by three different ways.</p>
-                      <ul>
-                        <li>HTML/CSS</li>
-                        <li>React.js</li>
-                        <li>RESTful API</li>
-                        <li>JaveScript</li>
-                        <li>Web Development</li>
-                      </ul>
+                    <ul>
+                      <li>HTML/CSS</li>
+                      <li>React.js</li>
+                      <li>RESTful API</li>
+                      <li>JaveScript</li>
+                      <li>Web Development</li>
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -119,7 +121,8 @@
                   <div class="card__image card__image--jab"></div>
                   <div class="card__content">
                     <div class="card__title">JUSQU'AU BOUT !</div>
-                    <p class="card__text">JUSQU'AU BOUT ! is a french learning website that I built for Pearson Canada Inc. 
+                    <p class="card__text">JUSQU'AU BOUT ! is a french learning website that I built for Pearson Canada
+                      Inc.
                       This website is built with reuseble javascript components and it is fully accessibile.</p>
                     <ul>
                       <li>HTML/CSS</li>

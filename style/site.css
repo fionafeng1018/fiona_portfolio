@@ -326,11 +326,11 @@ body h2 {
   font-size: 1.5rem;
 }
 
-#sec_01 .profile_img {
+#aboutme .profile_img {
   width: 40%;
 }
 
-#sec_01 .left_col {
+#aboutme .left_col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,28 +344,28 @@ body h2 {
   height: 100vh;
 }
 
-#sec_01 .right_col {
+#aboutme .right_col {
   height: 100vh;
 }
 
-#sec_01 .about_me_content {
+#aboutme .about_me_content {
   display: inline-block;
   margin: 0 auto;
   padding: 100px;
 }
 
-#sec_02 .container-fluid {
+#project .container-fluid {
   padding-top: 10vh;
 }
 
 @media (min-width: 50rem) {
-  #sec_02 .container-fluid {
+  #project .container-fluid {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 }
 
-#sec_02 h1 {
+#project h1 {
   padding-left: 16px;
 }
 
