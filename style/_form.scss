@@ -1,17 +1,22 @@
+$primary-text-color:#264653;
+$secondary_background_color: #f9c46c;
+$third_color:#f4a261;
+$forth_color:#e76f51;
+$nav_font_color:#2a9d8f;
+
 form {
     max-width: 400px;
     margin: 30px auto;
 }
 
 .feedback-input {
-    color: #000000;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    color: $primary-text-color;
     font-weight: 100;
     font-size: 12px;
     border-radius: 5px;
     line-height: 12px;
     background-color: transparent;
-    border: 1px solid rgba(237, 54, 66, 1.00);
+    border: 1px solid $primary-text-color;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -25,7 +30,7 @@ form {
 }
 
 .feedback-input:focus {
-    border: rgba(156, 95, 96, 0.89) 2px solid;
+    border:$nav_font_color 2px solid;
 }
 
 textarea {

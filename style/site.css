@@ -231,20 +231,23 @@ ul.social-icons {
   background-image: url("../images/jab.png");
 }
 
+.card__image--bc {
+  background-image: url("../images/inquiring.png");
+}
+
 form {
   max-width: 400px;
   margin: 30px auto;
 }
 
 .feedback-input {
-  color: #000000;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  color: #264653;
   font-weight: 100;
   font-size: 12px;
   border-radius: 5px;
   line-height: 12px;
   background-color: transparent;
-  border: 1px solid #ed3642;
+  border: 1px solid #264653;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   padding: 13px;
@@ -260,7 +263,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: rgba(156, 95, 96, 0.89) 2px solid;
+  border: #2a9d8f 2px solid;
 }
 
 textarea {
@@ -285,15 +288,15 @@ textarea {
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #f5887f;
+  color: #2a9d8f;
 }
 
 .navbar-light .navbar-nav .active > .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.show:hover,
 .navbar-light .navbar-nav .show > .nav-link:hover {
-  background-color: #f5887f;
-  color: #ffffff;
+  background-color: #f9c46c;
+  color: #264653;
 }
 
 /*Variables*/
@@ -304,7 +307,7 @@ textarea {
 body {
   position: relative;
   font-family: "Roboto", sans-serif;
-  color: #000000;
+  color: #264653;
 }
 
 body .padding {
@@ -326,7 +329,12 @@ body h2 {
 }
 
 #aboutme .profile_img {
-  width: 40%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+#aboutme h1 {
+  font-weight: bold;
 }
 
 #aboutme .left_col {
@@ -339,18 +347,19 @@ body h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fadedc;
+  background-color: #f9c46c;
   height: 100vh;
 }
 
 #aboutme .right_col {
   height: 100vh;
+  text-align: center;
 }
 
 #aboutme .about_me_content {
   display: inline-block;
   margin: 0 auto;
-  padding: 100px;
+  padding: 30px;
 }
 
 #project .container-fluid {
@@ -368,17 +377,17 @@ body h2 {
   padding-left: 16px;
 }
 
-#sec_03 {
-  background-color: #fadedc;
+#contact {
+  background-color: #f9c46c;
 }
 
-#sec_03 h2 {
+#contact h2 {
   padding-top: 2rem;
   text-align: center;
-  color: #f5887f;
+  color: #264653;
 }
 
-#sec_03 p {
+#contact p {
   text-align: center;
 }
 

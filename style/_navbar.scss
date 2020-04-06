@@ -1,4 +1,6 @@
-$nav_font_color:#f5887f;
+$secondary_font_color:#2a9d8f;
+$primary-text-color:#264653;
+$secondary_background_color: #f9c46c;
 
 @mixin change_nav_link_color {
 
@@ -9,8 +11,8 @@ $nav_font_color:#f5887f;
         color: $nav_font_color;
 
         &:hover {
-            background-color: #f5887f;
-            color: #ffffff;
+            background-color: $secondary_background_color;
+            color: $primary-text-color;
         }
 
     }

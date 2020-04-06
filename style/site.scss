@@ -9,7 +9,7 @@
 /*Variables*/
 $primary-backround-color:#ffffff;
 $primary-font-family:'Roboto', sans-serif;
-$primary-text-color:#000000;
+$primary-text-color:#264653;
 
 /*font sizes*/
 $primary-font-size: 0.875rem;
@@ -22,7 +22,11 @@ $mobile_left_col_height: 30px;
 $contact-section-height:300px;
 
 /*section 1 variables*/
-$pink_background_color: #fadedc;
+$secondary_background_color: #f9c46c;
+$third_color:#f4a261;
+$forth_color:#e76f51;
+$secondary_font_color:#2a9d8f;
+
 
 /*functions*/
 @mixin centerText {
@@ -41,7 +45,7 @@ $pink_background_color: #fadedc;
 @mixin horizontal_Center {
     display: inline-block;
     margin: 0 auto;
-    padding: 100px;
+    padding: 30px;
 
 }
 
@@ -95,17 +99,25 @@ section {
 
 #aboutme {
     .profile_img {
-        width: 40%;
+        width: 20%;
+        border-radius: 50%;
+    }
+
+
+
+    h1{
+        font-weight:bold;
     }
 
     .left_col {
         @include flexCenter();
-        background-color: $pink_background_color;
+        background-color: $secondary_background_color;
         height: $full_screen-height;
     }
 
     .right_col {
         height: $full_screen-height;
+        text-align: center;
     }
 
     .about_me_content {
@@ -129,12 +141,12 @@ section {
 }
 
 
-#sec_03 {
-    background-color:$pink_background_color;
+#contact {
+    background-color:$secondary_background_color;
     h2{
         padding-top:2rem;
         text-align: center;
-        color:#f5887f;
+        color:$primary-text-color;
     }
     p{
         text-align: center;
