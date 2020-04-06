@@ -219,8 +219,16 @@ ul.social-icons {
   }
 }
 
-.card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+.card__image--headphone {
+  background-image: url("../images/jammming.png");
+}
+
+.card__image--ravenous {
+  background-image: url("../images/ravenous.png");
+}
+
+.card__image--jab {
+  background-image: url("../images/jab.png");
 }
 
 form {
@@ -316,10 +324,6 @@ body h1 {
 
 body h2 {
   font-size: 1.5rem;
-}
-
-section {
-  height: 100vh;
 }
 
 #sec_01 .profile_img {
