@@ -22,7 +22,7 @@ $mobile_left_col_height: 30px;
 $contact-section-height:300px;
 
 /*section 1 variables*/
-$left_background_color: #fadedc;
+$pink_background_color: #fadedc;
 
 /*functions*/
 @mixin centerText {
@@ -100,7 +100,7 @@ section {
 
     .left_col {
         @include flexCenter();
-        background-color: $left_background_color;
+        background-color: $pink_background_color;
         height: $full_screen-height;
     }
 
@@ -130,7 +130,15 @@ section {
 
 
 #sec_03 {
-
+    background-color:$pink_background_color;
+    h2{
+        padding-top:2rem;
+        text-align: center;
+        color:#f5887f;
+    }
+    p{
+        text-align: center;
+    }
 }
 
 
@@ -139,7 +147,7 @@ section {
         height: 100%;
     }
 
-    #sec_01 {
+    #aboutme {
         .profile_img {
             width: 20%;
             border-radius: 50%;
@@ -161,7 +169,7 @@ section {
 
 @media screen and (max-width:414px) {
 
-    #sec_01 {
+    #aboutme {
         .profile_img {
             width: 30%;
             margin: 1rem 0rem;
