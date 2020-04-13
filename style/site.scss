@@ -1,15 +1,15 @@
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Lato);
+// @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import './media_icons';
 @import './card';
 @import './form';
 @import './navbar';
+@import './home-animation';
+@import './variables';
 
-/*Variables*/
-$primary-backround-color:#ffffff;
-$primary-font-family:'Roboto', sans-serif;
-$primary-text-color:#264653;
+
 
 /*font sizes*/
 $primary-font-size: 0.875rem;
@@ -20,12 +20,6 @@ $h2-size:1.5rem;
 $full_screen-height:100vh;
 $mobile_left_col_height: 30px;
 $contact-section-height:300px;
-
-/*section 1 variables*/
-$secondary_background_color: #f9c46c;
-$third_color:#f4a261;
-$forth_color:#e76f51;
-$secondary_font_color:#2a9d8f;
 
 
 /*functions*/
@@ -54,23 +48,15 @@ $secondary_font_color:#2a9d8f;
 
 }
 
-@mixin video_background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    transition: 1s opacity;
+
+.center{
+    text-align: center;
 }
 
 body {
     position: relative;
     font-family: $primary-font-family;
-    color: $primary-text-color;
+    color: $black;
 
     .padding {
         padding-top: 30px;
@@ -82,48 +68,178 @@ body {
     }
 
     h1 {
-        font-size: $h1-size;
-        text-transform: uppercase;
-    }
-
-    h2 {
-        font-size: $h2-size;
+        margin: 2rem 0;
     }
 
 }
 
-section {
-    // height: $full_screen-height;
+#home {
+    @include flexCenter();
+    height: $full_screen-height;
+    text-align: center;
 
+    h1{
+        font-size:3rem;
+        font-weight: 700;
+        
+    }
+
+    .name{
+        color:$orange;
+        opacity: 100%;
+    }
+
+    .home-page-intro{
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bg-img{
+        background-image: url('../images/background.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100%;
+        height: 100vh;
+        opacity: 80%;
+    }
+
+
+    .home-button {
+        position: relative;
+        bottom: -150px;
+        padding: 0.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25rem;
+        transition: all .7s ease;
+        background-color:$yellow;
+
+        @media (max-width:768px) {
+            bottom: -600px;
+            width:25%;
+        }
+
+        &:hover {
+            border: none;
+            background-color:$red;
+            color:white;
+            
+
+        }
+    }
+
+    $ani-speed: 2s;
+    $ani-delay: 1s;
+
+    .arrow {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: 50% 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    .arrow-first {
+        animation: arrow-movement $ani-speed ease-in-out infinite;
+    }
+
+    .arrow-second {
+        animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+    }
+
+    .arrow:before,
+    .arrow:after {
+        background: $forth_color;
+        content: '';
+        display: block;
+        height: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+    }
+
+    .arrow:before {
+        transform: rotate(45deg) translateX(-23%);
+        transform-origin: top left;
+    }
+
+    .arrow:after {
+        transform: rotate(-45deg) translateX(23%);
+        transform-origin: top right;
+    }
+
+    // Animation
+    @keyframes arrow-movement {
+        0% {
+            opacity: 0;
+            top: 45%;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    // arrow animation end
+
+    .tech-image {
+        margin-top: 3rem;
+
+    }
+
+    .profile_img {
+        width: 15%;
+        border-radius: 50%;
+    }
 }
 
 #aboutme {
+    // height: $full_screen-height;
+
     .profile_img {
-        width: 20%;
-        border-radius: 50%;
+        width: 50%;
+        height:auto;
+        // border-radius: 50%;
     }
 
-
-
-    h1{
-        font-weight:bold;
-    }
-
-    .left_col {
+    .profile-div{
         @include flexCenter();
-        background-color: $secondary_background_color;
-        height: $full_screen-height;
+        background-color: rgba(245, 228, 228, 0.856);
+        
+        opacity: 90%;
     }
-
-    .right_col {
-        height: $full_screen-height;
-        text-align: center;
+    .skill-div{
+        h3{
+            font-size:1rem;
+        }
     }
 
     .about_me_content {
         @include horizontal_Center();
     }
+
+    .icons {
+        width: 30%;
+    }
+
+    .skill-list{
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
 }
+
+
 
 #project {
     .container-fluid {
@@ -133,53 +249,43 @@ section {
             padding-left: 8rem;
             padding-right: 8rem;
         }
-        
-    }
-    h1{
-        padding-left:16px;
+
     }
 }
 
 
 #contact {
-    background-color:$secondary_background_color;
-    h2{
-        padding-top:2rem;
+    background-color: $secondary_background_color;
+
+    h2 {
+        padding-top: 2rem;
         text-align: center;
-        color:$primary-text-color;
+        color: $primary-text-color;
     }
-    p{
+
+    p {
         text-align: center;
     }
 }
 
 
-@media screen and (max-width:768px) {
-    section {
-        height: 100%;
+@media (max-width: 576px) {//576px
+    #home {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 0.5rem;
+        }
+
+        .tech-image {
+            width: 100%;
+            height: auto;
+            margin-top: 3rem;
+
+        }
     }
-
-    #aboutme {
-        .profile_img {
-            width: 20%;
-            border-radius: 50%;
-            margin: 2rem 0rem;
-        }
-
-        .left_col {
-            @include flexCenter();
-            height: 100%;
-        }
-
-        .about_me_content {
-            padding: 2rem;
-        }
-
-    }
-
-}
-
-@media screen and (max-width:414px) {
 
     #aboutme {
         .profile_img {
@@ -192,4 +298,41 @@ section {
         }
 
     }
+
 }
+
+@media (max-width: 768px) {
+    section {
+        height: 100%;
+    }
+
+    #home {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2{
+            font-size:1rem;
+        }
+    }
+
+    #aboutme {
+        .profile_img {
+            width: 20%;
+            border-radius: 50%;
+
+        }
+
+        .left_col {
+            @include flexCenter();
+            height: 100%;
+        }
+
+        .about_me_content {
+            padding: 2rem;
+        }
+
+    }
+}
+
+    

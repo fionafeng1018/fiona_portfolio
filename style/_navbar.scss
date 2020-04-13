@@ -1,6 +1,4 @@
-$secondary_font_color:#2a9d8f;
-$primary-text-color:#264653;
-$secondary_background_color: #f9c46c;
+@import './variables';
 
 @mixin change_nav_link_color {
 
@@ -8,14 +6,38 @@ $secondary_background_color: #f9c46c;
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link.show,
     .navbar-light .navbar-nav .show>.nav-link {
-        color: $nav_font_color;
+        color: $black;
+        text-transform: uppercase;
+        margin:1rem 0 0.5rem 0;
 
         &:hover {
-            background-color: $secondary_background_color;
-            color: $primary-text-color;
+            border-bottom: 3px solid $yellow;
+        }
+
+        &:active{
+            border-bottom: 3px solid $yellow;
         }
 
     }
+
+     @media (max-width:768px) {
+
+         .navbar-light .navbar-nav .active>.nav-link,
+         .navbar-light .navbar-nav .nav-link,
+         .navbar-light .navbar-nav .nav-link.show,
+         .navbar-light .navbar-nav .show>.nav-link {
+             text-align: center;
+         }
+     }
+
+     .navbar-light{
+        .navbar-toggler {
+            border-color: $secondary_background_color;
+            float: right;
+        }
+     }
+     
+
 }
 
 .bg-light {
@@ -32,3 +54,4 @@ $secondary_background_color: #f9c46c;
 }
 
 @include change_nav_link_color();
+

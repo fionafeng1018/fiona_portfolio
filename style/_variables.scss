@@ -1,0 +1,25 @@
+$yellow: #f9c46c;
+$orange:#f4a261;
+$red:#e76f51;
+$green:#2a9d8f;
+$dark_green:#264653;
+
+/*Variables*/
+$primary-backround-color:#ffffff;
+$primary-font-family:'Roboto',sans-serif;
+
+
+$black:#000000;
+
+@mixin video_background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+}
