@@ -1,22 +1,19 @@
-$primary-text-color:#264653;
-$secondary_background_color: #f9c46c;
-$third_color:#f4a261;
-$forth_color:#e76f51;
-$nav_font_color:#2a9d8f;
+@import './variables';
 
 form {
     max-width: 400px;
     margin: 30px auto;
+    
 }
 
 .feedback-input {
-    color: $primary-text-color;
+    color: $primary-color;
     font-weight: 100;
     font-size: 12px;
     border-radius: 5px;
     line-height: 12px;
     background-color: transparent;
-    border: 1px solid $primary-text-color;
+    border: 1px solid $primary-color;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -30,7 +27,7 @@ form {
 }
 
 .feedback-input:focus {
-    border:$nav_font_color 2px solid;
+    border:$primary-color 2px solid;
 }
 
 textarea {
@@ -40,6 +37,7 @@ textarea {
 }
 
 .submit-button{
-    background-color: $nav_font_color;
+    background-color: $primary-color;
+    
 
 }

@@ -1,8 +1,5 @@
 /* Social Media icons css */
-$secondary_font_color:#2a9d8f;
-$primary-text-color:#264653;
-$secondary_background_color: #f9c46c;
-
+@import './variables';
 
 .intro-social-icons a {
     text-decoration: none;
@@ -25,7 +22,7 @@ p>a:hover {
 }
 
 .social-icon {
-    color: $secondary_font_color;
+    color: $primary-color;
 }
 
 ul.social-icons {
@@ -39,7 +36,7 @@ ul.social-icons {
 }
 
 .social-icons a {
-    color: $secondary_font_color;
+    color: $primary-color;
     text-decoration: none;
 }
 
