@@ -676,9 +676,6 @@ body h1 {
   #home h2 {
     font-size: 1rem;
   }
-  #home .bg-img {
-    background-image: url("../images/background02-phone.jpg");
-  }
   #aboutme .about_me_content {
     padding: 2rem;
   }
@@ -713,9 +710,6 @@ body h1 {
     width: 100%;
     height: auto;
     margin-top: 3rem;
-  }
-  #home .bg-img {
-    background-image: url("../images/background02-smaller.jpg");
   }
   #aboutme .profile_img {
     width: 80%;
