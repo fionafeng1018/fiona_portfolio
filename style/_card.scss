@@ -1,4 +1,7 @@
 
+
+@import './variables';
+
 //colors
 $gray-light: #cccccc;
 $gray-dark:#5c5c5c;
@@ -31,12 +34,20 @@ $card_title_margin:0rem 1rem 0rem 1rem;
     display: flex;
     padding: 1rem;
     width: 33.3333%;
+    a{
+        text-decoration:none;
+        color:black;
+    }
+
+    @media(max-width: 1024px) {
+        width: 50%;
+    }
 
     @media(max-width: 768px) {
         width: 50%;
     }
 
-    @media(max-width: 414px) {
+    @media(max-width: 576px) {
         width: 100%;
     }
 }
@@ -52,6 +63,8 @@ $card_title_margin:0rem 1rem 0rem 1rem;
         .card__image {
             filter: contrast(100%);
         }
+
+
     }
 }
 
@@ -88,8 +101,8 @@ $card_title_margin:0rem 1rem 0rem 1rem;
 
     li{
         display: list-item;
-        border: 1px solid #dddce0;
-        color: #4b4b4d;
+        border: 1px solid $gray-light;
+        color: $gray-dark;
         padding: .1rem .4rem;
         font-size: .88rem;
         border-radius: 3px;
@@ -101,8 +114,6 @@ $card_title_margin:0rem 1rem 0rem 1rem;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    // border-top-left-radius: 0.25rem;
-    // border-top-right-radius: 0.25rem;
     filter: contrast(70%);
     overflow: hidden;
     position: relative;

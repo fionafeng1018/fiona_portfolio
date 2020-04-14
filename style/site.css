@@ -84,6 +84,7 @@ ul.social-icons {
 }
 
 /* End of Social Media icons css */
+/*Variables*/
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,13 +110,24 @@ ul.social-icons {
   width: 33.3333%;
 }
 
+.cards__item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .cards__item {
+    width: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   .cards__item {
     width: 50%;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .cards__item {
     width: 100%;
   }
@@ -185,8 +197,8 @@ ul.social-icons {
 
 .card__content li {
   display: list-item;
-  border: 1px solid #dddce0;
-  color: #4b4b4d;
+  border: 1px solid #cccccc;
+  color: #5c5c5c;
   padding: .1rem .4rem;
   font-size: .88rem;
   border-radius: 3px;
@@ -643,10 +655,6 @@ body h1 {
 #aboutme .skill-div h3 {
   font-size: 1rem;
   font-weight: bold;
-}
-
-#project .container-fluid {
-  padding-top: 10vh;
 }
 
 @media (min-width: 50rem) {

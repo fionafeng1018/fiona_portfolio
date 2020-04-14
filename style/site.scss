@@ -216,8 +216,6 @@ body {
 }
 
 #aboutme {
-    // height: $full_screen-height;
-
     .profile_img {
         width: 100%;
         height:auto;
@@ -228,9 +226,6 @@ body {
         @include flexCenter();
         background-color:rgba(245, 219, 219, 0.822);
 
-        p{
-            //font-weight: bold;
-        }
     }
 
     .about_me_content {
@@ -275,8 +270,7 @@ body {
 
 #project {
     .container-fluid {
-        padding-top: 10vh;
-
+        
         @media (min-width: 50rem) {
             padding-left: 8rem;
             padding-right: 8rem;
