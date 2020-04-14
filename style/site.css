@@ -478,6 +478,7 @@ body h1 {
 @media (max-width: 576px) {
   #home .bg-img {
     background-image: url("../images/background02-smaller.jpg");
+    background-color: black;
   }
 }
 
