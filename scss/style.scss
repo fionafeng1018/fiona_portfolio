@@ -444,6 +444,15 @@ h1, h2, h3, h4, h5,
   bottom: 120px;
   z-index: 2;
 }
+@media(max-height:700px){
+	.mouse {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 90px;
+		z-index: 2;
+	}
+}
 .mouse-icon{
    width: 70px;
    height: 70px;
