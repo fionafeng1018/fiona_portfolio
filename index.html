@@ -1,287 +1,556 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fiona's Portfolio</title>
-  <!--Bootstrap 4 css-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <!--local css-->
-  <link rel='stylesheet' href="style/site.css">
-  <!--Google font-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-  <!--Bootstrap 4-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <!--Vue js-->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<title>Fiona Feng</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <main>
-    <!-- The overlay -->
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#aboutme">About me</a>
-        <a class="nav-link" href="#project">Project</a>
-        <a class="nav-link" href="./files/FionaFeng_Resume.pdf" target="_black">Resume</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </div>
-    </div>
-
-    <section id="home">
-      <div class="container-fluid bg-img">
-        <div class="row home-page-intro">
-          <div class="col-lg-12">
-            <span class="nav-button" 
-              onclick="openNav()">&#9776;</span>
-            <h1 class="main_heading slide-fwd-center"> Hi, I'm <span class="name">Fiona Feng</span>.</h1>
-            <h1>I'm a full stack web developer.</h1>
-            <p>I design & build web applications.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="aboutme">
-      <div class="container-fluid">
-        <div class="row center">
-          <div class="col-12">
-            <h1>About me</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="container">
-            <div class="row center">
-              <div class="col-lg-12">
-                <p>What am I good at?</p>
-              </div>
-            </div>
-            <div class="row skill-list center">
-              <div class="col-lg-3 col-md-6">
-                <!-- <img src="./images/icons/programming.png" class="icons"> -->
-                <h3>Frontend</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS/SASS</li>
-                  <li>Javescript ES6</li>
-                  <li>jquery</li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <!-- <img src="./images/icons/framework.svg" class="icons"> -->
-                <h3>Framework</h3>
-                <ul>
-                  <li>React.js</li>
-                  <li>Redux</li>
-                  <li>Bootstrap 4</li>
-                  <li>Node.js</li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <!-- <img src="./images/icons/coding-language.png" class="icons"> -->
-                <h3>Backend</h3>
-                <ul>
-                  <li>Python</li>
-                  <li>AWS</li>
-                  <li>RESTful API</li>
-                  <li>SQL/NoSQL</li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <!-- <img src="./images/icons/responsive-design.png" class="icons"> -->
-                <h3>Source Control</h3>
-                <ul>
-                  <li>GitHub</li>
-                  <li>SCRUM/Agile</li>
-                  <li>Jira/Bitbucket</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 profile-div">
-            <div class="col-lg-6 picture-div">
-                <img alt="fiona's profile picture" src="./images/profile.JPG" class="profile_img">
-            </div>
-            <div class="col-lg-6 profile-content-div">
-                <p style="font-weight: bold;">Want to know more about me?</p>
-                <p>I am a front-end developer at Pearson Canada Inc. in Toronto, ON. I have serious passion for developing
-                  interactive web applications with the most
-                  advanced technology.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 skill-div">
-            <h3>Responsive & Accessibile</h3>
-            <p>Creating fully responsive and accessible educational web applications has been my major responsibility
-              since I started
-              my journey as a front-end developer three years ago. My proficiency in <span class="tech-words">HTML, CSS,
-                Bootstrap 4, and Google Material</span> Design ensures that
-              my applications work on any screen sizes. Having my web applications to meet the <span
-                class="tech-words">WCAG 2.0 Level AA Accessibility</span> requirements is a key of ensuring
-              there are no barriers that prevent people with disabilities.</p>
-
-            <h3>Creative & Automative</h3>
-            <p>I value creativity and efficiency. JavaScript and Python have been my tools to automate my workflow and
-              daily tasks, they make everything easier and simpler.
-              I automated content updating process with javascript program and created product QA application with
-              React.js and Python.
-            </p>
-
-            <h3>Efficient & Reusable</h3>
-            <p>I love creating SPAs with the most poplar javescript framework React.js and Vue.js becasue they make my
-              applications stable and fast than ever.</p>
-
-            <h3>Curious & Passionate</h3>
-            <p>I have no special talent. I am only passionately curious. - <i>Albert Einstein</i></p>
-            <p>Learning the newest techonology has been my passion. In my spare time, I like taking additonal coursed
-              online, reading technical articles, and working on my side projects.
-              I have created cool applications with React.js and RESTful APIs.</p>
-
-          </div>
-        </div>
-    
-      </div>
-    </section>
-    <section id="project">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 center" >
-            <h1>Project</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div id="card">
-            <ul class="cards">
-              <li class="cards__item">
-                <a href="https://musicforlove.herokuapp.com/" target="_blank">
-                <div class="my_card">
-                  <div class="card__image card__image--headphone"></div>
-                  <div class="card__content">
-                    <div class="card__title">Jammming</div>
-                    <p class="card__text">Jammming is an website application which is built with React.js and Spotify
-                      API that allows the users to search the Spotify library, create a custom playlist, then save it
-                      to
-                      their Spotify account.
-                    </p>
-                    <ul>
-                      <li>HTML/CSS</li>
-                      <li>React.js</li>
-                      <li>RESTFUL API</li>
-                    </ul>
-                  </div>
-                </div>
-                </a>
-              </li>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-              <li class="cards__item">
-                <a href="https://github.com/fionafeng1018/ravenous" target="_blank">
-                <div class="my_card">
-                  <div class="card__image card__image--ravenous"></div>
-                  <div class="card__content">
-                    <div class="card__title">Ravenous</div>
-                    <p class="card__text">Ravenous is a React app to search for restaurants using the Yelp API.
-                      This applicaion allows users to search and sort the results by three different ways.</p>
-                    <ul>
-                      <li>HTML/CSS</li>
-                      <li>React.js</li>
-                      <li>RESTful API</li>
-                    </ul>
-                  </div>
-                </div>
-                </a>
-              </li>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><span>F</span>iona</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="hero-wrap js-fullheight">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+					<div class="text text-center">
+						<span class="subheading">Hey! I am</span>
+						<h1>Fiona Feng</h1>
+						<h2>I'm a
+							<span class="txt-rotate" data-period="2000"
+								data-rotate='[ "Full-stack Developer.", "Web Designer.", "Accessibility Expert.", "Automation Engineer."]'></span>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="mouse">
+			<a href="#" class="mouse-icon">
+				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+			</a>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="about-section" style="padding:1rem 0;">
+		<div class="container-fluid px-md-5">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">About</h1>
+					<h2 class="mb-4">About</h2>
+					<p>I am a front-end developer at Pearson Canada Inc. in Toronto, ON. I have serious passion for developing interactive web
+					applications with the most advanced technology. Creating fully responsive and accessible web applications has been my major responsibility since I started
+					my journey as a front-end developer three years ago.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 text-center d-flex ftco-animate">
+					<a href="#" class="services-1 shadow">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Responsive & Interactive</h3>
+							<p>My proficiency in HTML, CSS, SASS, Bootstrap 4, and Google Material
+							Design and jQuery ensures that my applications work on any screen sizes.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 text-center d-flex ftco-animate">
+					<a href="#" class="services-1 shadow">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Accessibile</h3>
+							<p>My deep understanding of the WCAG 2.0 Level AA Accessibility requirements is a key of ensuring there are no
+							barriers that prevent people with disabilities.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 text-center d-flex ftco-animate">
+					<a href="#" class="services-1 shadow">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Fast & Reusable</h3>
+							<p>My experience of React.js, Redux, Vue.js and Node.js allows me to created SPAs with applications with reuseble components that are
+							stable and fast.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-6 text-center d-flex ftco-animate">
+					<a href="#" class="services-1 shadow">
+						<span class="icon">
+							<i class="flaticon-idea"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Creative & Automative</h3>
+							<p>Automation changes the world. I love automating manual work with JavaScript and Python. 
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-              <li class="cards__item">
-                <a href="http://www.pearsoncanada.ca/school/jab2/" target="_blank">
-                <div class="my_card">
-                  <div class="card__image card__image--jab"></div>
-                  <div class="card__content">
-                    <div class="card__title">JUSQU'AU BOUT !</div>
-                    <p class="card__text">JUSQU'AU BOUT ! is a french learning website that I built for Pearson Canada
-                      Inc.
-                      This website is built with reuseble javascript components and it is fully accessibile.</p>
-                    <ul>
-                      <li>HTML/CSS</li>
-                      <li>Bootstrap 4</li>
-                      <li>JaveScript</li>
-                    </ul>
-                  </div>
-                </div>
-                </a>
-              </li>
+	<section class="ftco-section ftco-no-pb goto-here pt-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="page-3" class="page three">
+						<h2 class="heading">Skills</h2>
+						<div class="row progress-circle mb-5">
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+									<h2 class="h5 font-weight-bold text-center mb-4">Front End</h2>
+					
+									<!-- Progress bar 1 -->
+									<div class="progress mx-auto" data-value='90'>
+										<span class="progress-left">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<div
+											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+										</div>
+									</div>
+									<!-- END -->
+					
+									<!-- Demo info -->
+									<div class="row text-center mt-4">
+										<div class="col-6 border-right">
+											<div class="h4 font-weight-bold mb-0">90%</div><span class="small text-gray">Bootstrap4</span>
+										</div>
+										<div class="col-6">
+											<div class="h4 font-weight-bold mb-0">90%</div><span class="small text-gray">React</span>
+										</div>
+									</div>
+									<!-- END -->
+								</div>
+							</div>
+					
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+									<h2 class="h5 font-weight-bold text-center mb-4">Back End</h2>
+					
+									<!-- Progress bar 1 -->
+									<div class="progress mx-auto" data-value='80'>
+										<span class="progress-left">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<div
+											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+										</div>
+									</div>
+									<!-- END -->
+					
+									<!-- Demo info -->
+									<div class="row text-center mt-4">
+										<div class="col-6 border-right">
+											<div class="h4 font-weight-bold mb-0">90%</div><span class="small text-gray">JavaScript</span>
+										</div>
+										<div class="col-6">
+											<div class="h4 font-weight-bold mb-0">80%</div><span class="small text-gray">Node.js</span>
+										</div>
+									</div>
+									<!-- END -->
+								</div>
+							</div>
+					
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+									<h2 class="h5 font-weight-bold text-center mb-4">DevOps</h2>
+					
+									<!-- Progress bar 1 -->
+									<div class="progress mx-auto" data-value='75'>
+										<span class="progress-left">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<div
+											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+										</div>
+									</div>
+									<!-- END -->
+					
+									<!-- Demo info -->
+									<div class="row text-center mt-4">
+										<div class="col-6 border-right">
+											<div class="h4 font-weight-bold mb-0">80%</div><span class="small text-gray">AWS</span>
+										</div>
+										<div class="col-6">
+											<div class="h4 font-weight-bold mb-0">70%</div><span class="small text-gray">Docker</span>
+										</div>
+									</div>
+									<!-- END -->
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>HTML5</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100" style="width:95%">
+											<span>95%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>CSS3</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100" style="width:95%">
+											<span>95%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>SCSS</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100" style="width:95%">
+											<span>95%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>JavaScript</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>React.js</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Bootstrap4</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Node.js</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>GitHub</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-              <li class="cards__item">
-                <a href="https://www.pearsoncanadaschool.com/index.cfm?locator=PS2vQc" target="_blank">
-                <div class="my_card">
-                  <div class="card__image card__image--bc"></div>
-                  <div class="card__content">
-                    <div class="card__title">Inquiring Minds</div>
-                    <p class="card__text">Inquiring Minds is a social study learing website that I built for Pearson
-                      Canada
-                      Inc.
-                      This website is built with reuseble javascript components and it is fully accessibile.</p>
-                    <ul>
-                      <li>HTML/CSS</li>
-                      <li>Material Design</li>
-                      <li>JaveScript</li>
-                    </ul>
-                  </div>
-                </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <footer>
-        <div class="container footer_con">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>CONTACT ME</h2>
-              <p>Email: fionafeng1018@gmail.com</p>
-              <div class="intro-social-icons" style="text-align: center;">
-                <ul class="social-icons">
-                  <li><a href="https://www.facebook.com/profile.php?id=100009403336579" target="_black"
-                      class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/FionaFeng1018" target="_black" class="social-icon"> <i
-                        class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/fiona-feng-a14b56128/" target="_black" class="social-icon">
-                      <i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://github.com/fionafeng1018" target="_black" class="social-icon"> <i
-                        class="fa fa-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <h2>Thanks for taking the time to reach out. How can I help you today?</h2>
-              <form action="mailto:fionafeng1018@gmail.com" method="post" enctype="text/plain">
-                <input name="name" type="text" class="feedback-input" placeholder="Name" required />
-                <input id="email" name="email" type="text" class="feedback-input" placeholder="Email" required />
-                <div id="emailErr"></div>
-                <textarea name="text" class="feedback-input" placeholder="Message" required></textarea>
-                <button type="submit" class="btn submit-button" style="float: right;">SEND</button>
-              </form>
-              <p class="copyright">Created by Fiona Feng &copy;2020</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-  </main>
-  <!-- Load our React component. -->
-  <script src="./js/card.js"></script>
-  <script src="./js/animation.js"></script>
-  <script src="./js/navbar.js"></script>
+	
+
+
+	<section class="ftco-section ftco-project pt-0" id="projects-section">
+		<div class="container-fluid px-md-0">
+			<div class="row no-gutters justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>My projects from work & side projects for fun</p>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/jammming.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="https://musicforlove.herokuapp.com/" target="_blank">Jammming</a></h3>
+							<span>React.js & Spotify API </span>
+							<br>
+							<span>Personal Project</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/im.png);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="https://www.pearsoncanadaschool.com/index.cfm?locator=PS2vQc" target="_blank">Inquiring Minds</a></h3>
+							<span>Material Design & JavaScript</span>
+							<br>
+							<span>Work Project</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/jab.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="http://www.pearsoncanada.ca/school/jab2/" target="_blank">JUSQU'AU BOUT !</a></h3>
+							<span>Bootstrap4 & Vue.js</span>
+							<br>
+							<span>Work Project</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/ravenous.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="https://github.com/fionafeng1018/ravenous" target="_blank">Ravenous</a></h3>
+							<span>React.js & Yelp API</span>
+							<br>
+							<span>Personal Project</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/dl.jpeg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="https://www.pearsoncanadaschool.com/index.cfm?locator=PS3bPw" target="_blank">Spark Reading</a></h3>
+							<span>Vue.js & Python</span>
+							<br>
+							<span>Work Project</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/wtlf.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="https://www.pearsoncanadaschool.com/index.cfm?locator=PS28F9" target="_blank">What to Look For</a></h3>
+							<span>Material Design & JavaScript</span>
+							<br>
+							<span>Work Project</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>I'm <span>looking forward to</span> working with you.</h2>
+					<p>I'm available for freelancing and also for all the new opportunities.</p>
+					<p class="mb-0"><a href="https://www.linkedin.com/in/fiona-feng-a14b56128/" target="_blank" class="btn btn-primary py-3 px-5">Hire me</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>How can I help you today?</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Location</h3>
+							<p>Toronto, ON, Canada</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Contact Number</h3>
+							<p><a href="tel://6472171018">647-217-1018</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Email Address</h3>
+							<p><a href="mailto:fionafeng1018@gmail.com">fionafeng1018@gmail.com</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Website</h3>
+							<p><a href="fionafeng.net" target="_blank">fionafeng.net</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Let's keep in touch!</h2>
+						<p>Please send me an email or follow me through social media. I'm happy to work with you.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/fiona-feng-a14b56128/" target="_blank"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/fionafeng1018" target="_blank"><span class="icon-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100009403336579" target="_blank"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/fionafenggg/" target="_blank"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy;<script>
+							document.write(new Date().getFullYear());
+						</script> All rights reserved | This website is made with <i class="icon-heart color-danger"
+							aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/fiona-feng-a14b56128/" target="_blank">Fiona Feng</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
